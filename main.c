@@ -15,7 +15,6 @@ buf_struct *make_struct(char *argv[])
 
 	return (&a);
 }
-
 /**
  * main - Takes argument list and executes file given.
  * @argc: Argument count.

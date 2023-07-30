@@ -38,9 +38,8 @@ void exec_loop(buf_struct *a)
 		line_n++;
 		i++;
 	}
-	i++;
+	free_stack(stack);
 }
-
 
 /**
  * get_op_func - selects the correct function to perform
@@ -75,7 +74,8 @@ void (*get_op_func(char *s))(stack_t **stack, unsigned int line_number)
 		if (strcmp(s, cmd[i].opcode) == 0)
 		{
 			return (cmd[i].f);
-		}i++;
+		}
+		i++;
 	}
-	 return (NULL);
+	return (NULL);
 }

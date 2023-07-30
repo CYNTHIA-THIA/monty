@@ -1,22 +1,21 @@
 #include "monty.h"
 
 /**
- * add - adds the top two elements of the stack
- * @stack: start of doubly linked list
- * @line_n: line number
- */
+  * add - adds the top two elements of the stack
+  * @stack: start of doubly linked list
+  * @line_n: line number
+  */
 void add(stack_t **stack, unsigned int line_n)
 {
 	if (!(*stack) || !(*stack)->next)
 	{
 		free_stack(*stack);
 		fprintf(stderr, "L%d: can't add, stack too short\n", line_n);
-			exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	(*stack)->next->n += (*stack)->n;
 	pop(stack, line_n);
 }
-
 
 /**
  * sub - adds the top two elements of the stack
@@ -59,10 +58,9 @@ void _div(stack_t **stack, unsigned int line_n)
 
 /**
  * mod - adds the top two elements of the stack
- *  @stack: start of doubly linked list
- *  @line_n: line number
+ * @stack: start of doubly linked list
+ * @line_n: line number
  */
-
 void mod(stack_t **stack, unsigned int line_n)
 {
 	if (!(*stack) || !(*stack)->next)
@@ -82,9 +80,9 @@ void mod(stack_t **stack, unsigned int line_n)
 }
 
 /**
- *  mul - adds the top two elements of the stack
- *  @stack: start of doubly linked list
- *   @line_n: line number
+ * mul - adds the top two elements of the stack
+ * @stack: start of doubly linked list
+ * @line_n: line number
  */
 void mul(stack_t **stack, unsigned int line_n)
 {

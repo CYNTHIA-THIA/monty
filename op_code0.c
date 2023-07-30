@@ -31,7 +31,6 @@ stack_t *push(stack_t **head, int n)
 	return (new);
 }
 
-
 /**
  * pall - prints doubly linked list
  * @stack: start of doubly linked list
@@ -50,7 +49,6 @@ void pall(stack_t **stack, unsigned int line_n)
 		fprintf(stdout, "%d\n", h->n);
 }
 
-
 /**
  * pint - prints first node of linked list
  * @stack: first node of linked list
@@ -66,8 +64,8 @@ void pint(stack_t **stack, unsigned int line_n)
 		exit(EXIT_FAILURE);
 	}
 	fprintf(stdout, "%d\n", h->n);
-}
 
+}
 
 /**
  * pop - removes first node of a linked list
@@ -88,11 +86,10 @@ void pop(stack_t **stack, unsigned int line_n)
 }
 
 /**
- * swap - swaps the top two elements of the stack
- * @stack: first node of linked list
- * @line_n: line number
- */
-
+  * swap - swaps the top two elements of the stack
+  * @stack: first node of linked list
+  * @line_n: line number
+  */
 void swap(stack_t **stack, unsigned int line_n)
 {
 	int hold = (*stack)->n;

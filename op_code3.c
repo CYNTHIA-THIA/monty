@@ -24,9 +24,9 @@ void rotl(stack_t **stack, unsigned int line_n)
 }
 
 /**
- *  * rotr - last element becomes top
- *  @stack: top of the stack - doubly linked list
- *  @line_n: line number
+ * rotr - last element becomes top
+ * @stack: top of the stack - doubly linked list
+ * @line_n: line number
  */
 void rotr(stack_t **stack, unsigned int line_n)
 {
@@ -47,9 +47,9 @@ void rotr(stack_t **stack, unsigned int line_n)
 }
 
 /**
- *  queue - flips the doubly linked list
- *  @stack: top of the stack - doubly linked list
- *   @line_n: line number
+ * queue - flips the doubly linked list
+ * @stack: top of the stack - doubly linked list
+ * @line_n: line number
  */
 void queue(stack_t **stack, unsigned int line_n)
 {

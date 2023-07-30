@@ -33,7 +33,6 @@ void pchar(stack_t **stack, unsigned int line_n)
 	printf("%c\n", (char)h->n);
 }
 
-
 /**
  * pstr - Print string based of ascii values in linked list.
  * @stack: Beginning of linked list.
